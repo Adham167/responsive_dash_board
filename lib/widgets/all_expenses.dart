@@ -15,7 +15,20 @@ class AllExpenses extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Column(children: [AllExpensesHeader(), AllExpensesItem(allExpensesItemModel: AllExpensesItemModel(image: Assets.imagesIncome, title: "Income", date: "April 2022", price: r"$20,129"),)]),
+      child: Column(
+        children: [
+          AllExpensesHeader(),
+          SizedBox(height: 16),
+          AllExpensesItem(
+            allExpensesItemModel: AllExpensesItemModel(
+              image: Assets.imagesIncome,
+              title: "Income",
+              date: "April 2022",
+              price: r"$20,129",
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
