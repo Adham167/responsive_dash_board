@@ -21,7 +21,7 @@ class AllExpensesItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpansesItemHeader(image: allExpensesItemModel.image),
-          SizedBox(height: 34),
+          SizedBox(height: 16),
           Text(allExpensesItemModel.title, style: AppStyles.styleSemiBold16),
           SizedBox(height: 8),
           Text(allExpensesItemModel.date, style: AppStyles.styleRegular14),
@@ -30,5 +30,6 @@ class AllExpensesItem extends StatelessWidget {
         ],
       ),
     );
+  
   }
 }
